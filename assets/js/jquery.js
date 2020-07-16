@@ -22,24 +22,45 @@ $(document).ready(function ($) {
 
    let counterSlider = 6;
    let left = 400;
+   $("#slide-2007").css("background-image", "none");
+   $("#slide-2008").css("background-image", "none");
 
    $(".ui-slider-handle").click(function () {
+      if(left > 800) {
+         left = 400;
+      }
+      if(counterSlider >= 6 && counterSlider < 8) {
+         let slide = `#slide-200${counterSlider}`;
+         $(slide).css("background-image", "none");
+         $(slide + '> .block-description > p').css("color", "black");
+         $(slide + '> .block-description > span').css("color", "black");
+         let nextSlide = `#slide-200${++counterSlider}`;
+         $(".ui-state-default").animate({
+            left: left
+         }, 400);
+         left = left + 400;
+         $(nextSlide).css("background-image", "linear-gradient(to top, #1d1d1dbd, #00000083), url(../img/2.png)");
 
-      let slide = `#slide-200${counterSlider}`;
-      $(slide).css("background-image", "none");
-      console.log(left, 'left');
-      let nextSlide = `#slide-200${++counterSlider}`;
+         $(nextSlide + '> .block-description > span').css("color", "red");
+         $(nextSlide + '> .block-description > p').css("color", "red");
 
-      $(".ui-state-default").animate({
-         left: left
-      }, 400);
+      } else {
+         let slide = `#slide-200${counterSlider}`;
+         $(slide).css("background-image", "none");
+         $(slide + '> .block-description > p').css("color", "black");
+         $(slide + '> .block-description > span').css("color", "black");
+         counterSlider = 6;
+         slide = `#slide-200${counterSlider}`;
+         $(".ui-state-default").animate({
+            left: 0
+         }, 400);
+         $(slide).css("background-image", "linear-gradient(to top, #1d1d1dbd, #00000083), url(../img/2.png)");
 
-      left = left + 400;
-
-      $(slide).css("color", "#000");
-      $(nextSlide).css("background-image", "linear-gradient(to top, #1d1d1dbd, #00000083), url(../img/2.png)");
-      $(nextSlide).css("color", "#fff");
+         $(slide + '> .block-description > span').css("color", "red");
+         $(slide + '> .block-description > p').css("color", "red");
+      }
    });
+
 
    //END SLIDER
 
