@@ -1,0 +1,21 @@
+.scroll-top {
+   bottom: 2rem;
+   height: 4rem;
+   width: 4rem;
+   position: fixed;
+   border-radius: 1px;
+   right: 2rem;
+   text-align: center;
+   z-index: 9999;
+
+   & img {
+      font-size: 1.4rem;
+      line-height: 4rem;
+      color: $color-white;
+
+      &:hover {
+         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+         background-color: $color-black;
+      }
+   }
+}

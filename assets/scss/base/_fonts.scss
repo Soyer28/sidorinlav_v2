@@ -1,0 +1,31 @@
+@font-face {
+   font-family: "Noah-ExtraBold";
+   font-display: swap;
+   src: url("../fonts/Noah-ExtraBold.woff") format("woff"), url("../fonts/Noah-ExtraBold.ttf") format("woff2");
+   font-weight: 900;
+   font-style: bold;
+}
+
+@font-face {
+   font-family: "Noah-Bold";
+   font-display: swap;
+   src: url("../fonts/Noah-ExtraBold.otf") format("woff"), url("../fonts/Noah-ExtraBold.ttf") format("woff2");
+   font-weight: 700;
+   font-style: bold;
+}
+
+@font-face {
+   font-family: "Noah-Medium";
+   font-display: swap;
+   src: url("../fonts/Noah-Medium.otf") format("woff"), url("../fonts/Noah-Medium.otf") format("woff2");
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Noah-Regular";
+   font-display: swap;
+   src: url("../fonts/Noah-Regular.otf") format("woff"), url("../fonts/Noah-Regular.ttf") format("woff2");
+   font-weight: 200;
+   font-style: normal;
+}

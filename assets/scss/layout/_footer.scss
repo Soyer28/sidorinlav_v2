@@ -1,0 +1,216 @@
+.footer {
+   background-color: $color-black;
+   height: 40rem;
+
+   &__top {
+      height: 22rem;
+
+      & h2 {
+         font-family: $font-regular;
+         font-size: 3rem;
+         font-weight: 300;
+         letter-spacing: 0.3rem;
+         line-height: 1.2;
+         color: $color-white;
+      }
+
+      &-enter {
+         display: inline-flex;
+         margin-right: 2.6rem;
+
+         & input {
+            border: 0;
+            width: 15rem;
+            height: 2.5rem;
+            background-color: $color-black;
+            border-bottom: 1px solid $color-white-dark;
+            padding-left: 5px;
+            color: $color-white;
+            font-size: 1.2rem;
+         }
+
+         & .top-text {
+            font-family: $font-regular;
+            font-weight: 400;
+            color: $color-grey-dark;
+            font-size: 0.9rem;
+
+            position: relative;
+            top: -3rem;
+            left: 1rem;
+         }
+
+         & .input-normal {
+            position: relative;
+            top: -1.3rem;
+            left: -8rem;
+            width: 15rem;
+         }
+      }
+
+      &-telefone {
+         width: 15rem;
+         margin-top: 2rem;
+         display: inline-block;
+
+         & .telefone-number {
+            display: block;
+            text-decoration: none;
+            color: $color-white;
+            font-size: 1rem;
+         }
+      }
+
+      &-addres {
+         display: inline-block;
+         width: 16.5rem;
+         margin-left: 2.8rem;
+         line-height: 1.2;
+
+         & .addres-text {
+            text-decoration: none;
+            color: $color-white;
+            font-size: 1rem;
+         }
+      }
+
+      &-radio {
+         width: 20rem;
+         float: right;
+         margin-top: 2rem;
+
+         & input {
+            display: inline-block;
+            position: relative;
+            top: -1rem;
+            margin-left: 1rem;
+         }
+
+         & p {
+            text-decoration: none;
+            color: $color-white;
+            font-size: 1rem;
+            display: inline-block;
+            padding-left: 1rem;
+
+            & a {
+               color: $color-white;
+            }
+         }
+      }
+   }
+
+   &__middle {
+      height: 18rem;
+
+      &-navigation {
+         display: inline-block;
+         padding-top: 4rem;
+
+         & li {
+            display: inline-block;
+         }
+
+         & a {
+            font-family: $font-regular;
+            text-decoration: none;
+            color: $color-grey-dark;
+            font-size: 1rem;
+            margin-right: 4rem;
+
+            &:hover {
+               color: $color-red-dark;
+            }
+         }
+      }
+
+      &-copyright {
+         display: block;
+         margin-top: 3rem;
+
+         & p {
+            font-family: $font-regular;
+            color: $color-grey-dark;
+            font-size: 1rem;
+         }
+      }
+
+      &-socials {
+         width: 20rem;
+         position: relative;
+         left: 37rem;
+         bottom: 3rem;
+
+         & a {
+            cursor: pointer;
+         }
+
+         & img {
+            height: 1rem;
+            margin-right: 3rem;
+
+            &:hover {
+               background-color: $color-red-dark;
+            }
+         }
+      }
+
+      &-subscription {
+         position: relative;
+         bottom: 8rem;
+         left: 61rem;
+         width: 18rem;
+
+         & label {
+            display: block;
+            font-family: $font-regular;
+            font-weight: 400;
+            color: $color-white;
+            font-size: 0.9rem;
+            padding-left: 0.2rem;
+            margin-bottom: 0.6rem;
+         }
+
+         & input {
+            border: 0;
+            width: 15rem;
+            height: 2.5rem;
+            background-color: $color-black;
+            border-bottom: 1px solid $color-white-dark;
+            padding-left: 5px;
+            color: $color-white;
+            font-size: 1.2rem;
+         }
+      }
+   }
+
+   &__bottom {
+      width: 100%;
+      height: 6rem;
+      background-color: $color-black-light;
+
+      &-navigation {
+         padding-top: 1.4rem;
+      }
+
+      & ul {
+         display: inline-flex;
+         list-style: none;
+      }
+
+      &--item {
+         display: inline-flex;
+         color: $color-grey-dark;
+         font-family: $font-regular;
+         letter-spacing: 0.05rem;
+         font-size: 1rem;
+         margin-right: 68px;
+
+         cursor: pointer;
+
+         &:hover {
+            color: $color-red-dark;
+         }
+      }
+   }
+}

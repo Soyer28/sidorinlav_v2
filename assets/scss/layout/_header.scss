@@ -1,0 +1,93 @@
+.header {
+   height: 75rem;
+   background-image: url(../img/1.png);
+   background-size: cover;
+   background-position: left;
+   position: relative;
+   mix-blend-mode: lighten;
+
+   &__logo-box {
+      display: inline-flex;
+   }
+
+   &__text-box {
+      position: absolute;
+      top: 40rem;
+   }
+
+   &__logo {
+      margin-top: 2.5rem;
+      position: relative;
+      top: 0.9rem;
+   }
+
+   &__menu {
+      display: inline-flex;
+
+      & ul {
+         display: inline;
+         margin-left: 6rem;
+      }
+
+      & li {
+         display: inline;
+         margin-right: 3rem;
+
+         & a {
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-family: $font-medium;
+            letter-spacing: 0.11rem;
+            line-height: 1.4rem;
+            color: $color-white;
+            text-transform: uppercase;
+            transition: .4s;
+
+            &:hover {
+               color: $color-red-dark;
+            }
+         }
+      }
+   }
+
+   &__search {
+      display: inline-flex;
+      margin-right: 3.5rem;
+      position: relative;
+      top: 5px;
+      cursor: pointer;
+   }
+
+   &__telefone-numbers {
+      display: inline-flex;
+
+      & .telefone {
+         text-decoration: none;
+         font-size: 1rem;
+         letter-spacing: 0.11rem;
+         line-height: 1.4rem;
+         color: $color-white;
+         text-transform: uppercase;
+         margin-right: 2rem;
+         cursor: pointer;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+   &__lang {
+      display: inline-flex;
+
+      & .language {
+         font-size: 1rem;
+         letter-spacing: 0.11rem;
+         line-height: 1.4rem;
+         color: $color-white;
+         text-transform: uppercase;
+         cursor: pointer;
+         text-decoration: underline;
+      }
+   }
+}

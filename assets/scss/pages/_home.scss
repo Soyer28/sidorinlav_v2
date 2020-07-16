@@ -1,0 +1,22 @@
+.section-about {
+   background-color: $color-white;
+   height: 75rem;
+}
+
+.block-about__careers {
+   width: 24rem;
+   height: 40rem;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   margin-right: 5rem;
+   margin-left: 5rem;
+
+   position: relative;
+   bottom: 12rem;
+}
+
+.section-video-about {
+   height: 62rem;
+   background-color: $color-black;
+}

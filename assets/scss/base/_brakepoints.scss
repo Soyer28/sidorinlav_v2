@@ -1,0 +1,151 @@
+@media (max-width: 1675px) {
+   .block-about__slider-timeline .wrapper-slider .ui-slider-horizontal {
+      width: 68rem;
+   }
+
+   html {
+      font-size: 80%;
+   }
+
+   .wrapper-content {
+      margin: 0 auto;
+      width: 80% !important;
+   }
+
+   .footer__top-enter .input-normal {
+      width: 20rem;
+   }
+
+   .footer__top-enter input {
+      width: 20rem;
+   }
+
+   .footer__top-radio input {
+      margin-left: -3rem;
+   }
+
+   .footer__top-addres {
+      margin-left: 7.8rem;
+   }
+
+   .footer__middle-subscription {
+      bottom: 10rem;
+      left: 76rem;
+   }
+
+   .footer__middle-socials {
+      left: 48rem;
+      bottom: 6rem;
+   }
+
+   .btn--white {
+      padding: 2rem 6rem;
+   }
+}
+
+@media (max-width: 1375px) {
+
+   .video-about .title-heading {
+      left: 0rem;
+   }
+}
+
+@media (max-width: $md1+px) {
+   html {
+      // This defines what 1rem is
+      font-size: 70%;
+   }
+
+   .wrapper-content {
+      margin: 0 auto;
+      width: 100% !important;
+   }
+
+   .btn--white {
+      padding: 1.8rem 4.4rem;
+   }
+
+   .footer__top-enter .input-normal {
+      width: 17rem;
+   }
+
+   .footer__top-enter input {
+      width: 17rem;
+   }
+
+   .footer__top-radio input {
+      margin-left: 0rem;
+   }
+
+   .footer__top-addres {
+      margin-left: 4.8rem;
+   }
+
+   .footer__middle-subscription {
+      left: 67rem;
+   }
+
+   .footer__middle-socials {
+      left: 41rem;
+   }
+}
+
+@media (max-width: 1180px) {
+   .block-about__slider-timeline {
+      width: 50rem;
+   }
+
+   .block-about__slider-timeline #slide-2006 {
+      width: 20rem;
+   }
+
+   .block-about__slider-timeline #slide-2007 {
+      width: 20rem;
+   }
+
+   .block-about__slider-timeline #slide-2009 {
+      width: 20rem;
+   }
+
+   .block-about__slider-timeline .wrapper-slider .ui-slider-horizontal {
+      width: 55rem;
+   }
+}
+
+@media (max-width: $md2+px) {
+   .wrapper-content {
+      margin: 0 auto;
+      width: 80% !important;
+   }
+
+   .header__search {
+      margin-left: 9rem;
+   }
+
+   .header__menu {
+      margin-bottom: 4rem;
+   }
+
+   .section-biografy .block-biography__img img {
+      left: -10rem;
+   }
+
+   .section-biografy .block-biography__description {
+      margin-left: -5rem;
+      margin-top: 3rem;
+   }
+
+   .btn--white {
+      left: 20rem;
+      top: -2.8rem;
+   }
+
+   .footer__middle-socials {
+      left: 32rem;
+      bottom: 3rem;
+   }
+}
+
+@media (max-width: $md3+px) {}
+
+@media (max-width: $md4+px) {}

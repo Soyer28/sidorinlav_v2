@@ -1,0 +1,55 @@
+body {
+   font-family: $font-regular;
+   font-size: $default-font-size;
+   line-height: 1.7;
+   //color: $color-grey-dark;
+}
+
+.heading-primary {
+   width: 45rem;
+   color: $color-white;
+   margin-bottom: 4rem;
+   line-height: 1.4;
+
+   &--main {
+      font-family: $font-regular;
+      font-size: 4.2rem;
+      letter-spacing: 0.2rem;
+      font-weight: 400;
+
+      & .red-text {
+         color: $color-red;
+      }
+   }
+
+   &--sub {
+      @include flexbox;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      letter-spacing: 0.11rem;
+      line-height: 2;
+      font-family: $font-regular;
+      font-weight: 400;
+   }
+}
+
+.heading-secondary {
+   width: 30rem;
+   position: relative;
+
+   &--main {
+      display: block;
+      font-family: $font-regular;
+      font-size: 4rem;
+      letter-spacing: 0.2rem;
+      font-weight: 400;
+   }
+
+   &--sub {
+      font-family: $font-medium;
+      line-height: 2.3rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+      padding-top: 3.5rem;
+   }
+}

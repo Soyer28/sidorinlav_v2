@@ -1,0 +1,83 @@
+.block-about__slider-timeline {
+   width: 70rem;
+   display: inline-flex;
+
+   & .wrapper-slider {
+      position: absolute;
+      margin-left: 0rem;
+      z-index: 5;
+
+      & #timelineSlider>div {
+         @include flexbox;
+         margin-top: 23rem;
+         text-align: center;
+         width: 2rem;
+         display: block;
+         font-size: 1rem;
+         margin-left: 4rem;
+         z-index: 3;
+         //position: absolute;
+         display: none;
+      }
+
+      & .ui-state-default,
+      .ui-widget-content .ui-state-default,
+      .ui-widget-header .ui-state-default {
+         display: block;
+         margin-top: -1.5rem;
+         margin-left: 2rem;
+         width: 4.1rem;
+         height: 4.1rem;
+         background-color: rgba(255, 255, 255, 0.096);
+         background-image: url(../img/arrow.svg);
+         background-repeat: no-repeat;
+         color: $color-white;
+         border-radius: 5rem;
+         border: 1px solid $color-white;
+         cursor: pointer;
+      }
+
+      & .ui-slider-horizontal {
+         height: 1px;
+         border-radius: 10px;
+         background: $color-black;
+         border: 0px;
+         width: 70rem;
+         margin-top: 25rem;
+      }
+   }
+
+   & .block-description {
+      padding-top: 30rem;
+   }
+
+   & #slide-2006 {
+      width: 35rem;
+      height: 75rem;
+      position: relative;
+      top: 0rem;
+      background-image: linear-gradient(to top, #1d1d1dbd, #00000083), url(../img/2.png);
+      background-size: cover;
+      background-position: top;
+   }
+
+   & #slide-2007 {
+      width: 35rem;
+      height: 75rem;
+      position: relative;
+      top: 0rem;
+      background-image: linear-gradient(to top, #1d1d1dbd, #00000083), url(../img/2.png);
+      background-size: cover;
+      background-position: top;
+   }
+
+   & #slide-2009 {
+      width: 35rem;
+      height: 75rem;
+      position: relative;
+      top: 0rem;
+      background-image: linear-gradient(to top, #1d1d1dbd, #00000083), url(../img/2.png);
+      background-size: cover;
+      background-position: top;
+   }
+}

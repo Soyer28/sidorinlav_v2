@@ -1,0 +1,49 @@
+.video-about {
+   display: block;
+   margin: 0 auto;
+   padding-top: 2rem;
+
+   & .title-heading {
+      font-family: $font-regular;
+      font-size: 3rem;
+      font-weight: 300;
+      letter-spacing: .3rem;
+      line-height: 1.2;
+      color: $color-white;
+      width: 39rem;
+
+      position: relative;
+      top: 18rem;
+      left: -4rem;
+   }
+
+   &__playpng {
+      width: 72rem;
+      height: 40rem;
+      display: flex;
+      margin: 0 auto;
+   }
+
+   &__playsvg {
+      width: 6rem;
+      position: relative;
+      top: -24rem;
+      left: 37rem;
+
+      cursor: pointer;
+   }
+}
+
+//YOUTUBE
+
+.ytp-chrome-top.ytp-show-cards-title {
+   display: none;
+}
+
+.ytp-cued-thumbnail-overlay-image {
+   opacity: 0.3;
+}
+
+.ytp-title {
+   display: none;
+}
