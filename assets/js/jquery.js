@@ -20,32 +20,26 @@ $(document).ready(function ($) {
 
    //START SLIDER
 
+   let counterSlider = 6;
+   let left = 400;
+
    $(".ui-slider-handle").click(function () {
+
+      let slide = `#slide-200${counterSlider}`;
+      $(slide).css("background-image", "none");
+      console.log(left, 'left');
+      let nextSlide = `#slide-200${++counterSlider}`;
+
       $(".ui-state-default").animate({
-         left: 400
+         left: left
       }, 400);
-      $("#slide-2006").css("background-image", "none");
-      $(".color-white").css("color", "#000");
-      $("#slide-2007").css("background-image", "linear-gradient(to top, #1d1d1dbd, #00000083), url(../img/2.png)");
-      $("#slide-2007").css("color", "#fff");
+
+      left = left + 400;
+
+      $(slide).css("color", "#000");
+      $(nextSlide).css("background-image", "linear-gradient(to top, #1d1d1dbd, #00000083), url(../img/2.png)");
+      $(nextSlide).css("color", "#fff");
    });
-
-   $(".ui-slider-handle").dblclick(function () {
-      $(".ui-state-default").animate({
-         left: 800
-      }, 400);
-      $("#slide-2006").css("background-image", "none");
-      $("#slide-2007").css("background-image", "none");
-      $("#slide-2009").css("color", "#000");
-      $(".color-grey").css("color", "#fff");
-      $("#slide-2007").css("color", "#000");
-      $("#slide-2009").css("background-image", "linear-gradient(to top, #1d1d1dbd, #00000083), url(../img/2.png)");
-      $("#slide-2009").css("color", "#fff");
-   });
-
-
-   $("#slide-2007").css("background-image", "none");
-   $("#slide-2009").css("background-image", "none");
 
    //END SLIDER
 

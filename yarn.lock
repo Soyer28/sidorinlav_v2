@@ -7709,7 +7709,7 @@ vinyl@^2.0.0, vinyl@^2.2.0:
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
 
-webp-converter@^2.1.6:
+webp-converter@^2.1.6, webp-converter@^2.2.3:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/webp-converter/-/webp-converter-2.2.8.tgz#efb804d7407a5ffc629e291dc6d172ce95c1cc30"
   integrity sha512-ntur5SLBIuOVQReQhvkox8SLOO4WcF2vN6GcODhdSlP1GqxIjQ6pDMuR6oY7Gm7rKjwubUanfp7gM6uUDrwlew==
